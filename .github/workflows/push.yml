@@ -21,7 +21,7 @@ env:
   BUILD_CONFIGURATION: Release
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -93,11 +93,11 @@ jobs:
       
     - name: addEmail
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: git config --global user.email "olekaspt@mail.uc.edu"
+      run: git config --global user.email "genglera@mail.uc.edu"
       
     - name: addName
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: git config --global user.name "Patrick Olelas"
+      run: git config --global user.name "Ryan Gengler"
       
     - name: add
       working-directory: ${{env.GITHUB_WORKSPACE}}
